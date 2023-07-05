@@ -1,0 +1,76 @@
+.main_head_signin {
+    background-image: url('../Image Section/396a2a39-8d34-4260-b07a-6391fe04ded5_what_is_netflix_2_en.png');
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.signin_cont {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: auto; */
+}
+
+.input_heads {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 55px;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.674);
+    border-radius: 3px;
+    /* border: 1px solid red; */
+    width: 32%;
+}
+
+.input_heads h2 {
+    color: white;
+}
+
+.input_heads button {
+    color: white;
+    background-color: rgb(230, 18, 18);
+    border: none;
+    font-weight: 800;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 15px;
+    border-radius: 4px;
+}
+
+.text label {
+    color: white;
+}
+
+.input_heads p {
+    margin-top: 12px;
+    color: rgb(155, 155, 155);
+    font-weight: 500;
+}
+
+.input_heads .links {
+    color: white;
+    font-weight: 500;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.links_new {
+    color: blue;
+    font-weight: 500;
+}
+
+.text_area p {
+    font-size: 14px;
+}
+
+@media screen and (max-width:1000px) {
+    .input_heads {
+        width: 100%;
+    }
+
+}
