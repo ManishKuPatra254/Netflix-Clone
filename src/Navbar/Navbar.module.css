@@ -1,0 +1,57 @@
+.main_sec_navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    align-items: center;
+    /* background-color: #000; */
+    background-image: url('../Image Section/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');
+    background-repeat: no-repeat;
+    filter: brightness(85%);
+    padding: 10px;
+}
+
+.heading {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 0px 200px;
+    align-items: center;
+}
+
+.heading img {
+    width: 150px;
+    height: auto;
+}
+
+.listing_sec_nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 0px 150px;
+}
+
+.listing_sec_nav select {
+    background-color: rgba(0, 0, 0, 0.477);
+    border: 1px solid rgb(193, 193, 193);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.listing_sec_nav button {
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.listing_sec_nav button:hover{
+    background-color: #c00b14;
+    transition: .3s ease;
+}
