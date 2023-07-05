@@ -29,7 +29,7 @@ export function Navbar() {
                             <option value="">
                                 <BsGlobe /> English
                             </option>
-                            <option value="">Hindi</option>
+                            <option value="">हिन्दी</option>
                         </select>
                         <Link to={'/signin'}> <button>Sign in</button></Link>
                     </div>
