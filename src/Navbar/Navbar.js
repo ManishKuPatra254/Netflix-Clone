@@ -59,7 +59,6 @@ export function Navbar() {
 
                                 }}
                             >Get Started <LiaGreaterThanSolid />  </Button>
-
                         </div>
                     </div>
                 </div>
