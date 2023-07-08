@@ -9,13 +9,90 @@ export function SignIn() {
     function handleButtonClick() {
         setIsLearnMore(true);
     };
+
+    // validation ................
+
+    const [takeEmailData, setTakeEmailData] = useState('');
+    const [takePasswordData, setTakePasswordData] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [passwordError, setPasswordError] = useState('');
+
+
+    function handleEmailDataInput(e) {
+        setTakeEmailData(e.target.value);
+        setEmailError('')
+    }
+
+    function handlePasswordDataInput(e) {
+        setTakePasswordData(e.target.value);
+        setPasswordError('')
+    }
+
+    async function handleDataSubmitEmailPassword(e) {
+
+        e.preventDefault();
+
+        let validationTrue = true;
+
+        if (!takeEmailData) {
+            setEmailError('Email Data is Required');
+            validationTrue = false;
+        }
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(takeEmailData)) {
+            setEmailError('Invalid Gmail');
+            validationTrue = false;
+        }
+
+        if (!takePasswordData) {
+            setPasswordError('Password is required');
+            validationTrue = false;
+        }
+
+        else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(takePasswordData)) {
+            setPasswordError('Invalid Password');
+            validationTrue = false
+        }
+
+        if (validationTrue) {
+            const responseData = await fetch("https://my-netflix-clone-react-signin-default-rtdb.firebaseio.com/netflixsignindata.json",
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        takeEmailData,
+                        takePasswordData,
+                    }),
+                });
+
+            if (responseData.ok) {
+                const data = await responseData.json();
+                if (data) {
+                    alert('Data saved Successfully');
+                } else {
+                    alert('No');
+                }
+            } else {
+                alert('Error occurred while saving data');
+            }
+            setTakeEmailData('');
+            setTakePasswordData('');
+        }
+    }
+
+
     return (
         <Fragment>
             <div className={style.main_head_signin}>
                 <div className={style.signin_cont}>
                     <div className={style.input_heads}>
                         <h2>Sign In</h2>
-                        <TextField label="Email or phone number" variant="filled" type='email' className={style.text}
+
+
+
+                        <TextField name='email' label="Email or phone number" variant="filled" type='email' className={style.text} value={takeEmailData} onChange={handleEmailDataInput} error={!!emailError}
+                            helperText={emailError}
                             sx={{
                                 width: '100%',
                                 color: 'white',
@@ -25,7 +102,8 @@ export function SignIn() {
                                 '& .MuiInputBase-input': { color: 'rgb(255,255,255)' }
                             }} />
 
-                        <TextField label="Password" variant="filled" type='password' className={style.text}
+                        <TextField name='password' label="Password" variant="filled" type='password' className={style.text} value={takePasswordData} onChange={handlePasswordDataInput} error={!!passwordError}
+                            helperText={passwordError}
                             sx={{
                                 width: '100%',
                                 color: 'white',
@@ -35,7 +113,8 @@ export function SignIn() {
                                 '& .MuiInputBase-input': { color: 'rgb(255,255,255)' }
                             }} />
 
-                        <button>Sign In</button>
+                        <button onClick={handleDataSubmitEmailPassword}>Sign In</button>
+
                         <p>New to Netflix ? <Link to={'/'} className={style.links}>Sign up now</Link></p>
 
                         <div className={style.text_area}>
