@@ -102,6 +102,7 @@ input[type='radio'] {
 
 .text_f_b {
     display: flex;
+    width: 100%;
     gap: 12px;
     justify-content: center;
     align-items: center;
@@ -148,8 +149,10 @@ input[type='radio'] {
         width: 100%;
     }
 
-    .responsiveTextField {
+    .email_sec p {
         width: 100%;
+        font-size: 18px;
+        padding: 5px 45px;
     }
 
 }

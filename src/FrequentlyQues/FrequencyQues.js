@@ -1,6 +1,6 @@
 import styles from './FrequentlyQues.module.css';
 import { Button } from '@mui/material';
-import { LiaGreaterThanSolid } from 'react-icons/lia';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { TextField } from '@mui/material';
 import React, { Fragment } from 'react'
 
@@ -84,7 +84,7 @@ export function FrequencyQues() {
                                 padding: '8px 22px',
 
                             }}
-                        >Get Started <LiaGreaterThanSolid /></Button>
+                        >Get Started <ArrowForwardIosIcon /></Button>
                     </div>
                 </div>
             </div>

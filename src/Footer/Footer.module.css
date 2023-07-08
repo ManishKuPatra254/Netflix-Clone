@@ -1,0 +1,115 @@
+.main_footer_sec {
+    width: 100%;
+    height: auto;
+    padding: 75px 290px;
+    /* border-top: 6px solid #333; */
+    color: #777;
+}
+
+.main_footer_sec h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(130, 130, 130);
+    margin-bottom: 30px;
+}
+
+.main_footer_sec span {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: rgb(130, 130, 130);
+    margin-bottom: 30px;
+}
+
+.sub_foot {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.sub_foot a {
+    /* border: 1px solid red; */
+    display: block;
+    text-decoration: underline;
+    padding: 5px 5px;
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.sub_2_foot {
+    align-items: flex-start;
+    padding: 10px 0px;
+}
+
+.listing_sec_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listing_sec_nav select {
+    background-color: rgba(0, 0, 0, 0.477);
+    border: 1px solid rgb(193, 193, 193);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.final_foot p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+@media screen and (max-width : 1200px) {
+
+    .main_footer_sec {
+        /* width: 100%; */
+        padding: 20px;
+    }
+
+    .main_footer_sec h2 {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .main_footer_sec span {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .sub_foot {
+        width: 100%;
+        display: inline;
+    }
+}
+
+
+@media screen and (max-width : 320px) {
+
+    .main_footer_sec {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main_footer_sec h2 {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .main_footer_sec span {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .sub_foot {
+        width: 100%;
+        display: inline;
+    }
+}

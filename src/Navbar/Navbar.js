@@ -5,7 +5,7 @@ import image1 from '../Image Section/netflix-logo-png-2562.png';
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
 import { BsGlobe } from 'react-icons/bs';
-import { LiaGreaterThanSolid } from 'react-icons/lia';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link } from 'react-router-dom';
 
 
@@ -58,7 +58,7 @@ export function Navbar() {
                                     padding: '8px 22px',
 
                                 }}
-                            >Get Started <LiaGreaterThanSolid />  </Button>
+                            >Get Started <ArrowForwardIosIcon />  </Button>
                         </div>
                     </div>
                 </div>
