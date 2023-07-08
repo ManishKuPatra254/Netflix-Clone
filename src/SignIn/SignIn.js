@@ -2,8 +2,16 @@ import React, { Fragment, useState } from 'react'
 import style from './SignIn.module.css'
 import { TextField } from '@mui/material'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { Footer } from '../Footer/Footer'
 
 export function SignIn() {
+    // navigate to new page (content page)......
+
+    const navigateToMainPage = useNavigate()
+
+    // toggle changes..............
+
     const [isLearnMore, setIsLearnMore] = useState(false);
 
     function handleButtonClick() {
@@ -78,6 +86,7 @@ export function SignIn() {
             }
             setTakeEmailData('');
             setTakePasswordData('');
+            navigateToMainPage('/mainhomenetflix')
         }
     }
 
@@ -123,6 +132,7 @@ export function SignIn() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </Fragment>
     )
