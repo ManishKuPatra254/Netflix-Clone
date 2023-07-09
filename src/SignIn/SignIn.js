@@ -4,6 +4,7 @@ import { TextField } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { Footer } from '../Footer/Footer'
+import CircularProgress from '@mui/material/CircularProgress'
 
 export function SignIn() {
     // navigate to new page (content page)......
@@ -25,6 +26,9 @@ export function SignIn() {
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
 
+    // preloader ................
+
+    const [loadPre, setLoadPre] = useState(false)
 
     function handleEmailDataInput(e) {
         setTakeEmailData(e.target.value);
@@ -62,6 +66,8 @@ export function SignIn() {
         }
 
         if (validationTrue) {
+
+            setLoadPre(true)
             const responseData = await fetch("https://my-netflix-clone-react-signin-default-rtdb.firebaseio.com/netflixsignindata.json",
                 {
                     method: 'POST',
@@ -77,12 +83,12 @@ export function SignIn() {
             if (responseData.ok) {
                 const data = await responseData.json();
                 if (data) {
-                    alert('Data saved Successfully');
+                    console.log('Data saved Successfully');
                 } else {
-                    alert('No');
+                    console.log('No');
                 }
             } else {
-                alert('Error occurred while saving data');
+                console.log('Error occurred while saving data');
             }
             setTakeEmailData('');
             setTakePasswordData('');
@@ -93,47 +99,57 @@ export function SignIn() {
 
     return (
         <Fragment>
-            <div className={style.main_head_signin}>
-                <div className={style.signin_cont}>
-                    <div className={style.input_heads}>
-                        <h2>Sign In</h2>
-
-
-
-                        <TextField name='email' label="Email or phone number" variant="filled" type='email' className={style.text} value={takeEmailData} onChange={handleEmailDataInput} error={!!emailError}
-                            helperText={emailError}
-                            sx={{
-                                width: '100%',
-                                color: 'white',
-                                margin: 'auto',
-                                backgroundColor: 'rgb(68, 68, 68)',
-                                borderRadius: '4px',
-                                '& .MuiInputBase-input': { color: 'rgb(255,255,255)' }
-                            }} />
-
-                        <TextField name='password' label="Password" variant="filled" type='password' className={style.text} value={takePasswordData} onChange={handlePasswordDataInput} error={!!passwordError}
-                            helperText={passwordError}
-                            sx={{
-                                width: '100%',
-                                color: 'white',
-                                margin: 'auto',
-                                backgroundColor: 'rgb(68, 68, 68)',
-                                borderRadius: '4px',
-                                '& .MuiInputBase-input': { color: 'rgb(255,255,255)' }
-                            }} />
-
-                        <button onClick={handleDataSubmitEmailPassword}>Sign In</button>
-
-                        <p>New to Netflix ? <Link to={'/'} className={style.links}>Sign up now</Link></p>
-
-                        <div className={style.text_area}>
-                            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <Link onClick={handleButtonClick} className={style.links_new}>Learn more</Link></p>
-                            {isLearnMore && <p>The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).</p>}
-                        </div>
+            {
+                loadPre ? (
+                    <div className={style.loader}>
+                        <CircularProgress size={88} sx={{ color: 'red' }} />
+                        <p>Loading Your Favoutites</p>
                     </div>
-                </div>
-                <Footer />
-            </div>
+                ) : (
+                    <div className={style.main_head_signin}>
+                        <div className={style.signin_cont}>
+                            <div className={style.input_heads}>
+                                <h2>Sign In</h2>
+
+
+
+                                <TextField name='email' label="Email or phone number" variant="filled" type='email' className={style.text} value={takeEmailData} onChange={handleEmailDataInput} error={!!emailError}
+                                    helperText={emailError}
+                                    sx={{
+                                        width: '100%',
+                                        color: 'white',
+                                        margin: 'auto',
+                                        backgroundColor: 'rgb(68, 68, 68)',
+                                        borderRadius: '4px',
+                                        '& .MuiInputBase-input': { color: 'rgb(255,255,255)' }
+                                    }} />
+
+                                <TextField name='password' label="Password" variant="filled" type='password' className={style.text} value={takePasswordData} onChange={handlePasswordDataInput} error={!!passwordError}
+                                    helperText={passwordError}
+                                    sx={{
+                                        width: '100%',
+                                        color: 'white',
+                                        margin: 'auto',
+                                        backgroundColor: 'rgb(68, 68, 68)',
+                                        borderRadius: '4px',
+                                        '& .MuiInputBase-input': { color: 'rgb(255,255,255)' }
+                                    }} />
+
+                                <button onClick={handleDataSubmitEmailPassword}>Sign In</button>
+
+                                <p>New to Netflix ? <Link to={'/'} className={style.links}>Sign up now</Link></p>
+
+                                <div className={style.text_area}>
+                                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <Link onClick={handleButtonClick} className={style.links_new}>Learn more</Link></p>
+                                    {isLearnMore && <p>The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).</p>}
+                                </div>
+                            </div>
+                        </div>
+                        <Footer />
+                    </div>
+                )
+            }
+
         </Fragment>
     )
 }

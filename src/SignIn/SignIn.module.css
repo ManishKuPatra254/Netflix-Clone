@@ -1,5 +1,18 @@
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.loader p {
+    color: white;
+    font-size: 30px;
+}
+
 .main_head_signin {
-    /* background-image: url('../Image Section/396a2a39-8d34-4260-b07a-6391fe04ded5_what_is_netflix_2_en.png'); */
     background-image: url('https://www.pointgadget.com/wp-content/uploads/2019/12/best-netflix-alternatives.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -76,7 +89,7 @@
 @media screen and (max-width:1000px) {
     .input_heads {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
         gap: 15px;
         background-color: black;

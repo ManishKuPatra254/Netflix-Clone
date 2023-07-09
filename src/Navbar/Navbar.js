@@ -41,9 +41,9 @@ export function Navbar() {
                         <p>Watch anywhere. Cancel anytime. </p>
                         <span>Ready to watch? Enter your email to create or restart your membership.</span>
                         <div className={style.text_f_b}>
-                            <TextField label="Email address" variant="outlined" type='email' className={style.text}
+                            <TextField label="Email address" variant="filled" type='email' className={style.text}
                                 value={inputUserEmail} onChange={(e) => setInputUserEmail(e.target.value)}
-                                sx={{ width: '50%', color: 'white', '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: 'white', backgroundColor: 'rgba(0 ,0 , 0 , .5)' }, '& .MuiInputBase-input': { color: 'rgb(255,255,255)' } }} />
+                                sx={{ width: '43%', border: '3px solid white', borderRadius: '5px', color: 'white', '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: 'white', backgroundColor: 'rgba(0 ,0 , 0 )' }, '& .MuiInputBase-input': { color: 'rgb(255,255,255)' } }} />
 
                             <Button
                                 onClick={handleClickGetStarted}
@@ -58,7 +58,7 @@ export function Navbar() {
                                     padding: '8px 22px',
 
                                 }}
-                            >Get Started <ArrowForwardIosIcon />  </Button>
+                            >Get Started <ArrowForwardIosIcon /></Button>
                         </div>
                     </div>
                 </div>
