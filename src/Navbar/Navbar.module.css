@@ -1,7 +1,6 @@
 .main_nav {
     /* border: 2px solid red; */
     display: flex;
-    /* background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg'); */
     background-image: url('../Image Section/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');
     flex-direction: column;
     background-size: cover;
@@ -24,7 +23,6 @@
 }
 
 .heading {
-    /* border: 1px solid red; */
     display: flex;
     padding: 0px 200px;
     align-items: center;
