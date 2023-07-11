@@ -8,7 +8,6 @@
 
 .main_trends_cards h4 {
     font-size: 30px;
-    margin-bottom: 20px;
 }
 
 .main_cards_trends {
@@ -16,7 +15,7 @@
     height: 100%;
     margin: auto;
     display: flex;
-    margin-top: 45px;
+    margin-top: 25px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
