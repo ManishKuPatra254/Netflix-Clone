@@ -10,6 +10,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import Alert from '@mui/material/Alert';
 import { useNavigate } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend';
 
 export function MainHomeContents() {
     const navigateToPlaySec = useNavigate();
@@ -100,6 +101,7 @@ export function MainHomeContents() {
                     <h6>When a gangster's son steals his car and kills his dog, fearless <br /> ex-hit man John Wick takes on the entire mob to get his revenge.John Wick uncovers a path to defeating The High Table. <br /> But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</h6>
                 </div>
             </div>
+            <MainCardsTrend />
         </Fragment>
     )
 }

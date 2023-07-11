@@ -1,0 +1,98 @@
+.main_trends_cards {
+    width: 100%;
+    max-width: 92%;
+    margin: auto;
+    height: auto;
+    color: white;
+}
+
+.main_trends_cards h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main_cards_trends {
+    width: 92%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_cards_trends::-webkit-scrollbar{
+    display: none;
+}
+
+.sub_cards_trends {
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 95%;
+    display: flex;
+    gap: 20px;
+}
+
+
+.sub_cards_trends img {
+    width: 100%;
+    border: 2px solid transparent;
+    transform: scale(1);
+    transition: .2s ease-in-out;
+}
+
+.sub_cards_trends img:hover {
+    width: 100%;
+    border: 2px solid white;
+    transform: scale(1.23);
+    transition: .2s ease-in-out;
+}
+
+@media screen and (max-width: 1100px) {
+    .main_trends_cards {
+        width: 100%;
+        max-width: 92%;
+        margin: auto;
+        height: auto;
+        color: white;
+    }
+
+    .main_trends_cards h4 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .main_cards_trends {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .sub_cards_trends {
+        width: 25%;
+        height: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        flex-shrink: 0; 
+    }
+
+    .sub_cards_trends img {
+        width: 100%;
+        border: 2px solid transparent;
+        transform: scale(1);
+        transition: .2s ease-in-out;
+    }
+
+    .sub_cards_trends img:hover {
+        width: 100%;
+        border: 2px solid white;
+        transform: scale(1.23);
+        transition: .2s ease-in-out;
+    }
+}
