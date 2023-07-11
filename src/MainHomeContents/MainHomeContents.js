@@ -11,6 +11,9 @@ import Alert from '@mui/material/Alert';
 import { useNavigate } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend';
+import { MainCardsPopular } from '../MainCardsPopular/MainCardsPopular';
+import { MainCardsOriginals } from '../MainCardsOriginals/MainCardsOriginals';
+import { Footer } from '../Footer/Footer';
 
 export function MainHomeContents() {
     const navigateToPlaySec = useNavigate();
@@ -102,6 +105,9 @@ export function MainHomeContents() {
                 </div>
             </div>
             <MainCardsTrend />
+            <MainCardsPopular />
+            <MainCardsOriginals />
+            <Footer />
         </Fragment>
     )
 }

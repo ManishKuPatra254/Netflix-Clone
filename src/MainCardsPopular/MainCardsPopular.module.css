@@ -54,6 +54,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    display: block;
     height: 100%;
     background-color: rgba(0, 0, 0, .9);
     display: flex;
@@ -61,7 +62,7 @@
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .drop_open {

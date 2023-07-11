@@ -1,8 +1,8 @@
-import { Fragment, useState } from 'react';
-import styles from './MainCardsTrend.module.css';
-import { mainCardsTrendData } from './MainCardsTrendData';
+import styles from './MainCardsOriginals.module.css'
+import React, { Fragment, useState } from 'react'
+import { mainCardsOriginalData } from './MainCardsOriginalsData';
 
-export function MainCardsTrend() {
+export function MainCardsOriginals() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     function handleImageClick(image) {
@@ -12,16 +12,14 @@ export function MainCardsTrend() {
     function closeDropdown() {
         setSelectedImage(null);
     };
-
-
     return (
         <Fragment>
             <div className={styles.main_trends_cards}>
-                <h4>Trending Now</h4>
+                <h4>Netflix Originals</h4>
             </div>
             <div className={styles.main_cards_trends}>
                 {
-                    mainCardsTrendData.map((itemsCard) => (
+                    mainCardsOriginalData.map((itemsCard) => (
                         <div key={itemsCard.id} className={styles.sub_cards_trends}>
                             <img src={itemsCard.images} alt="" onClick={() => handleImageClick(itemsCard.links_images)} />
                         </div>
@@ -39,3 +37,5 @@ export function MainCardsTrend() {
         </Fragment>
     )
 }
+
+

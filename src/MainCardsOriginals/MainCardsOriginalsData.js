@@ -1,4 +1,4 @@
-export const mainCardsTrendData = [
+export const mainCardsOriginalData = [
     {
         "id": 1,
         "images": "https://m.media-amazon.com/images/M/MV5BZjg5MTM4N2QtN2RlMS00NzBlLTg3NDktM2ExZDNmMmExMGU3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
