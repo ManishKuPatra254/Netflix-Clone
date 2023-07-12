@@ -13,6 +13,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend';
 import { MainCardsPopular } from '../MainCardsPopular/MainCardsPopular';
 import { MainCardsOriginals } from '../MainCardsOriginals/MainCardsOriginals';
+import { MainNewReleases } from '../MainNewReleases/MainNewReleases';
 import { Footer } from '../Footer/Footer';
 
 export function MainHomeContents() {
@@ -107,6 +108,7 @@ export function MainHomeContents() {
             <MainCardsTrend />
             <MainCardsPopular />
             <MainCardsOriginals />
+            <MainNewReleases />
             <Footer />
         </Fragment>
     )
