@@ -22,7 +22,7 @@
 }
 
 .sub_movies_cards {
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .movie_image_card {
@@ -42,5 +42,5 @@
 .movie_name {
     text-align: center;
     margin-top: 20px;
-    font-weight: 600;
+    font-weight: 900;
 }

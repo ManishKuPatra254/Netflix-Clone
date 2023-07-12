@@ -1,4 +1,4 @@
-.main_trends_cards {
+.main_movie_contained {
     width: 100%;
     max-width: 92%;
     margin: auto;
@@ -6,135 +6,41 @@
     color: white;
 }
 
-.main_trends_cards h4 {
+.main_movie_contained h4 {
     font-size: 30px;
 }
 
-.main_cards_trends {
-    width: 92%;
-    height: 100%;
-    margin: auto;
+.main_movie {
     display: flex;
-    margin-top: 25px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
 }
 
-.main_cards_trends::-webkit-scrollbar {
+.main_movie::-webkit-scrollbar {
     display: none;
 }
 
-.sub_cards_trends {
-    height: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    width: 95%;
-    display: flex;
-    gap: 12px;
-    flex-shrink: 1;
+.sub_movies_cards {
+    margin-right: 30px;
 }
 
-.sub_cards_trends img {
-    width: 100%;
-    border: 2px solid transparent;
+.movie_image_card {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
     transform: scale(1);
     transition: .2s ease-in-out;
 }
 
-.sub_cards_trends img:hover {
-    width: 100%;
-    transform: scale(1.23);
+.movie_image_card:hover {
     transition: .2s ease-in-out;
+    transform: scale(1.2);
 }
 
-.dropdown_trans {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s ease-in-out;
-}
-
-.drop_open {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.dropdown_indexs {
-    max-width: 80%;
-    max-height: 80%;
-    animation: slideIn .3s ease-in-out;
-}
-
-.dropdown_indexs p {
-    color: white;
-    animation: slideIn .3s ease-in-out;
-}
-
-@keyframes slideIn {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .main_trends_cards {
-        width: 100%;
-        max-width: 92%;
-        margin: auto;
-        height: auto;
-        color: white;
-    }
-
-    .main_trends_cards h4 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .main_cards_trends {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        overflow: auto;
-    }
-
-    .sub_cards_trends {
-        width: 25%;
-        height: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
-
-    .sub_cards_trends img {
-        width: 100%;
-        border: 2px solid transparent;
-        transform: scale(1);
-        transition: .2s ease-in-out;
-    }
-
-    .sub_cards_trends img:hover {
-        width: 100%;
-        border: 2px solid white;
-        transform: scale(1.23);
-        transition: .2s ease-in-out;
-    }
+.movie_name {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
 }

@@ -10,11 +10,6 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import Alert from '@mui/material/Alert';
 import { useNavigate } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend';
-import { MainCardsPopular } from '../MainCardsPopular/MainCardsPopular';
-import { MainCardsOriginals } from '../MainCardsOriginals/MainCardsOriginals';
-import { MainNewReleases } from '../MainNewReleases/MainNewReleases';
-import { Footer } from '../Footer/Footer';
 
 export function MainHomeContents() {
     const navigateToPlaySec = useNavigate();
@@ -47,20 +42,20 @@ export function MainHomeContents() {
                         <img src={image2} alt="" />
                         <div className={styles.list_nav}>
                             <ul>
-                                <Link><li>Home</li></Link>
-                                <Link><li>TV Shows</li></Link>
-                                <Link><li>Movies</li></Link>
-                                <Link><li>Recently Added</li></Link>
+                                <Link to={'/mainhomenetflix'}><li>Home</li></Link>
+                                <Link to={'/tvshows'}><li>TV Shows</li></Link>
+                                <Link to={'/movies'}><li>Movies</li></Link>
+                                <Link to={'/newandpopular'}><li>New & Popular</li></Link>
                             </ul>
                         </div>
                         <div className={styles.res_nav_list}>
                             <p onClick={handleClickOpenDrop}><KeyboardArrowDownIcon /></p>
                             {openMenu && (
                                 <ul className={styles.drops_list_res_nav}>
-                                    <Link><li>Home</li></Link>
-                                    <Link><li>TV Shows</li></Link>
-                                    <Link><li>Movies</li></Link>
-                                    <Link><li>Recently Added</li></Link>
+                                    <Link to={'/mainhomenetflix'}><li>Home</li></Link>
+                                    <Link to={'/tvshows'}><li>TV Shows</li></Link>
+                                    <Link to={'/movies'}><li>Movies</li></Link>
+                                    <Link to={'/newandpopular'}><li>New & Popular</li></Link>
                                 </ul>
                             )}
                         </div>
@@ -105,11 +100,6 @@ export function MainHomeContents() {
                     <h6>When a gangster's son steals his car and kills his dog, fearless <br /> ex-hit man John Wick takes on the entire mob to get his revenge.John Wick uncovers a path to defeating The High Table. <br /> But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</h6>
                 </div>
             </div>
-            <MainCardsTrend />
-            <MainCardsPopular />
-            <MainCardsOriginals />
-            <MainNewReleases />
-            <Footer />
         </Fragment>
     )
 }
