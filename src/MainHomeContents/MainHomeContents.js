@@ -10,8 +10,51 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import Alert from '@mui/material/Alert';
 import { useNavigate } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useEffect } from 'react';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCCmuFSdZT3XlmUqyuCVBCjrkfSslrNsFY",
+    authDomain: "my-netflix-clone-react-signin.firebaseapp.com",
+    databaseURL: "https://my-netflix-clone-react-signin-default-rtdb.firebaseio.com",
+    projectId: "my-netflix-clone-react-signin",
+    storageBucket: "my-netflix-clone-react-signin.appspot.com",
+    messagingSenderId: "605393947462",
+    appId: "1:605393947462:web:b1128a841df4744f82b347"
+}
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 export function MainHomeContents() {
+    const [email, setEmail] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchEmailData = async () => {
+            try {
+                const emailDataRef = db.collection('emails').doc('emailDocumentId');
+                const emailDataSnapshot = await emailDataRef.get();
+                if (emailDataSnapshot.exists) {
+                    const emailData = emailDataSnapshot.data();
+                    setEmail(emailData.email);
+                }
+                else {
+                    console.log('Email document does not exist.');
+                }
+            } catch (error) {
+                console.error('Error fetching email data:', error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchEmailData();
+    }, []);
+
+    console.log('Email:', email || 'Loading...');
+
     const navigateToPlaySec = useNavigate();
 
     function handleNavigatToPlay() {
@@ -78,7 +121,7 @@ export function MainHomeContents() {
                             onClose={handleClose}>
                             <Alert sx={{ width: '450px' }} severity="info">No new notifications</Alert>
                         </Menu>
-                        <p>Manish</p>
+                        <p>{isLoading ? 'Loading...' : email}</p>
                     </div>
                 </div>
             </div>

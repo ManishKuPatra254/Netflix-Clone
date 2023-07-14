@@ -2,7 +2,8 @@ import styles from './MainMoviesN.module.css';
 import React, { useState, useEffect, Fragment } from 'react';
 import axios from 'axios';
 import { MainHomeContents } from '../MainHomeContents/MainHomeContents'
-import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend'
+import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend';
+import { Footer } from '../Footer/Footer'
 
 export function Movies() {
 
@@ -18,7 +19,7 @@ export function Movies() {
             console.error('Error fetching data:', error);
         }
     };
-    
+
     useEffect(() => {
         fetchMoviesData();
     }, []);
@@ -43,6 +44,7 @@ export function Movies() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </Fragment>
     );
 }
