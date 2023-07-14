@@ -8,11 +8,12 @@ import Menu from '@mui/material/Menu';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Alert from '@mui/material/Alert';
-import { useNavigate } from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useEffect } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
+import { Modal } from '@mui/material';
+import { Box } from '@mui/material';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCCmuFSdZT3XlmUqyuCVBCjrkfSslrNsFY",
@@ -55,12 +56,6 @@ export function MainHomeContents() {
 
     console.log('Email:', email || 'Loading...');
 
-    const navigateToPlaySec = useNavigate();
-
-    function handleNavigatToPlay() {
-        navigateToPlaySec('/mainplaynetflix');
-    }
-
     const [openMenu, setOpenMenu] = useState(false);
 
     function handleClickOpenDrop() {
@@ -75,6 +70,16 @@ export function MainHomeContents() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+    const [openModal, setOpen] = useState(false);
+
+    function handleOpenModal() {
+        setOpen(true);
+    }
+
+    function handleCloseModal() {
+        setOpen(false);
+    }
 
 
     return (
@@ -133,13 +138,40 @@ export function MainHomeContents() {
                 <div className={styles.text_in_image}>
                     <p>NETFLIX <span>ORIGINAL</span></p>
                     <h1>JOHN WICK : CHAPTER 4</h1>
-                    <Button onClick={handleNavigatToPlay} sx={{
+                    <Button onClick={handleOpenModal} sx={{
                         backgroundColor: 'red',
                         "&:hover": { backgroundColor: '#c00b14' },
                         padding: '8px 35px',
                         fontSize: '16px',
                         marginTop: '10px'
                     }} variant="contained"><PlayArrowIcon /> PLAY</Button>
+
+                    <Modal sx={{backgroundColor : 'rgba(0,0,0,.8)'}}
+                        open={openModal}
+                        onClose={handleCloseModal}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <Box sx={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            width: '95%',
+                            height: '90%',
+                          
+                        }}>
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/qEVUtrk8_B4?controls=0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </Box>
+                    </Modal>
                     <h6>When a gangster's son steals his car and kills his dog, fearless <br /> ex-hit man John Wick takes on the entire mob to get his revenge.John Wick uncovers a path to defeating The High Table. <br /> But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</h6>
                 </div>
             </div>
