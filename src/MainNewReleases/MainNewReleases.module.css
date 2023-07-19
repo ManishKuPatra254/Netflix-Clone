@@ -95,4 +95,11 @@
         font-size: 15px;
         font-weight: 400;
     }
+
+    .selected_image {
+        margin: auto;
+        width: 200px;
+        height: 300px;
+        cursor: pointer;
+    }
 }
