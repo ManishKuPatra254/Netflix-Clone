@@ -143,10 +143,11 @@ export function MainHomeContents() {
                         "&:hover": { backgroundColor: '#c00b14' },
                         padding: '8px 35px',
                         fontSize: '16px',
-                        marginTop: '10px'
+                        marginTop: '10px',
+                        transition: 'background-color .2s ease'
                     }} variant="contained"><PlayArrowIcon /> PLAY</Button>
 
-                    <Modal sx={{backgroundColor : 'rgba(0,0,0,.8)'}}
+                    <Modal sx={{ backgroundColor: 'rgba(0,0,0,.8)', transition: 'opacity .5s ease' }}
                         open={openModal}
                         onClose={handleCloseModal}
                         aria-labelledby="modal-modal-title"
@@ -159,7 +160,7 @@ export function MainHomeContents() {
                             transform: 'translate(-50%, -50%)',
                             width: '95%',
                             height: '90%',
-                          
+
                         }}>
                             <iframe
                                 width="100%"

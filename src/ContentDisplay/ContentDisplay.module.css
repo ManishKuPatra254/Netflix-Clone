@@ -88,14 +88,16 @@
     }
 
     .text_area_content_2 h1 {
-        font-size: 32px;
+        font-size: 30px;
         width: 100%;
+        padding: 0px 13px;
         text-align: center;
     }
     .text_area_content_2 p {
         font-size: 18px;
         width: 100%;
         text-align: center;
+        padding: 0px 13px;
     }
 
 }

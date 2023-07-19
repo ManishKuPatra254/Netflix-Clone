@@ -50,42 +50,4 @@ export function TvShows() {
 }
 
 
-// import "./styles.css";
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// export default function App() {
-//   const [tvshows, setTvShows] = useState([]);
 
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const response = await axios.get(
-//           ' https://api.themoviedb.org/3/movie/upcoming?api_key=baf56e28709599d5cca030703a8c2697'
-//         );
-//         setTvShows(response.data.results);
-//       } catch (error) {
-//         console.error('Error fetching data:', error);
-//       }
-//     };
-
-//     fetchData();
-//   }, []);
-
-//   return (
-//     <div className="App">
-//       <h1>TV Shows</h1>
-//       <div className="movie-list">
-//         {tvshows.map((tvshows) => (
-//           <div className="movie-item" key={tvshows.id}>
-//             <img
-//               className="movie-image"
-//               src={`https://image.tmdb.org/t/p/w200${tvshows.poster_path}`}
-//               alt={tvshows.title}
-//             />
-//             <p className="movie-title">{tvshows.title}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
