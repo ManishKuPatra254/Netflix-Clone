@@ -84,6 +84,12 @@
     gap: 10px;
 }
 
+.vote_new {
+    color: rgb(0, 143, 0);
+    text-align: center;
+    font-size: 45px;
+}
+
 @media screen and (max-width:1050px) {
     .caption_new {
         font-size: 30px;
@@ -94,5 +100,10 @@
         text-align: justify;
         font-size: 15px;
         font-weight: 400;
+    }
+
+    .vote_new {
+        color: rgb(2, 191, 2);
+        font-size: 30px;
     }
 }

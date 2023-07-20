@@ -11,6 +11,7 @@ export function MainCardsPopular() {
     const [selectedMovie, setSelectedMovie] = useState(null);
     const [caption, setCaption] = useState('');
     const [overview, setOverview] = useState('');
+    const [vote, setVote] = useState('');
 
     async function fetchTrendData() {
         try {
@@ -32,10 +33,11 @@ export function MainCardsPopular() {
         setCaption('');
     };
 
-    function handleImageClick(posterPath, title, overview) {
+    function handleImageClick(posterPath, title, overview, vote) {
         setSelectedMovie(posterPath);
         setCaption(title);
         setOverview(overview)
+        setVote(vote);
     }
 
     return (
@@ -47,7 +49,7 @@ export function MainCardsPopular() {
                         <div
                             className={`${styles.sub_movies_cards} ${selectedMovie === trending.poster_path ? styles.selected : ''}`}
                             key={trending.id}
-                            onClick={() => handleImageClick(trending.poster_path, trending.title, trending.overview)}
+                            onClick={() => handleImageClick(trending.poster_path, trending.title, trending.overview, trending.vote_average)}
                         >
                             <img
                                 className={styles.movie_image_card}
@@ -67,6 +69,7 @@ export function MainCardsPopular() {
 
                         <div className={styles.caption_new}>{caption}</div>
                         <div className={styles.overview_new}>{overview}</div>
+                        <div className={styles.vote_new}>{vote}</div>
                         <div className={styles.btn_container}>
                             <Button
                                 sx={{
