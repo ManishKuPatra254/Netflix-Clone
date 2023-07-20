@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Netflix Clone ...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Netflix clone, a web application that replicates some of the functionalities and features of the popular streaming platform Netflix. The goal of this project is to demonstrate the ability to create a responsive and interactive web application similar to Netflix using modern web technologies.
 
-## Available Scripts
+# Features ...
 
-In the project directory, you can run:
+1.  User authentication: Users can sign up, log in, and log out.
+2. Browse movies and TV shows: Users can browse through a collection of movies and TV shows available on the platform.
+3. Search functionality: Users can search for specific movies or TV shows.
+4. Watch trailers: Users can watch trailers for movies and TV shows.
+5. Add to watchlist: Users can add movies and TV shows to their watchlist to keep track of what they want to watch later.
+6. Responsive design: The application is optimized to work on various devices such as desktops, tablets, and smartphones.
 
-### `npm start`
+# Installation ...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this website follow the steps ...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository
+2. Download all the dependencies (if not present)
+3. Go to VS code and click on terminal
+4. Run a command (npm start)
+5. See the result ✌️
 
-### `npm test`
+<h1> Requirements </h1>
+<ul>
+  <li>React-JS</li>
+   <li>React Icons</li>
+   <li>React Router Dom</li>
+   <li>React Hot Toast</li>
+   <li>Material UI</li>
+   <li>Material UI Icons</li>
+   <li>Google Firebase</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Screenshots ...
 
-### `npm run build`
+<h3>Hero Section UI</h3>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 2023-07-04 113711](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/25cfa46e-fc4d-48ba-a01d-f8c80e5e7753)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Training Programs</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2023-07-04 113858](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/b39c04b5-5172-414d-8eb0-d3b8ba818bc3)
 
-### `npm run eject`
+<h3>Meet Our Team </h3>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot 2023-07-04 114006](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/49c11071-13a1-49e9-a6ed-8bad82cc27f6)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3>Pricing</h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot 2023-07-04 114120](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/940d9c33-00ce-4a42-b953-914350a5f398)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h3>About Us</h3>
 
-## Learn More
+![Screenshot 2023-07-04 114250](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/71ad48b6-f5a5-4465-a592-a3d775b31242)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3>Classes Page</h3>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot 2023-07-04 114402](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/3db46f67-c48c-4257-93a9-6efd5fedfc4a)
 
-### Code Splitting
+<h3>Blogs Page</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot 2023-07-04 114449](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/17c8955e-8d51-4466-bac2-2899472f2032)
 
-### Analyzing the Bundle Size
+<h3>Join Us Page</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2023-07-04 114536](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/a25a3148-7bec-4ccd-ba4e-b0ffd2520a28)
