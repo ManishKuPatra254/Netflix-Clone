@@ -6,10 +6,9 @@ This is a Netflix clone, a web application that replicates some of the functiona
 
 1.  User authentication: Users can sign up, log in, and log out.
 2. Browse movies and TV shows: Users can browse through a collection of movies and TV shows available on the platform.
-3. Search functionality: Users can search for specific movies or TV shows.
-4. Watch trailers: Users can watch trailers for movies and TV shows.
-5. Add to watchlist: Users can add movies and TV shows to their watchlist to keep track of what they want to watch later.
-6. Responsive design: The application is optimized to work on various devices such as desktops, tablets, and smartphones.
+3. Watch trailers: Users can watch trailers for movies and TV shows.
+4. Add to watchlist: Users can add movies and TV shows to their watchlist to keep track of what they want to watch later.
+5. Responsive design: The application is optimized to work on various devices such as desktops, tablets, and smartphones.
 
 # Installation ...
 
@@ -24,9 +23,7 @@ To run this website follow the steps ...
 <h1> Requirements </h1>
 <ul>
   <li>React-JS</li>
-   <li>React Icons</li>
    <li>React Router Dom</li>
-   <li>React Hot Toast</li>
    <li>Material UI</li>
    <li>Material UI Icons</li>
    <li>Google Firebase</li>
