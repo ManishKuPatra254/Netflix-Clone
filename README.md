@@ -31,34 +31,22 @@ To run this website follow the steps ...
 
 # Screenshots ...
 
-<h3>Hero Section UI</h3>
+![Screenshot 2023-07-20 132208](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/3636a623-f503-4695-9594-78adb1a20534)
 
-![Screenshot 2023-07-04 113711](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/25cfa46e-fc4d-48ba-a01d-f8c80e5e7753)
 
-<h3>Training Programs</h3>
+![Screenshot 2023-07-20 132408](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/e6a6619b-cc31-4e0d-8584-f4ac8db8b24a)
 
-![Screenshot 2023-07-04 113858](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/b39c04b5-5172-414d-8eb0-d3b8ba818bc3)
 
-<h3>Meet Our Team </h3>
+![Screenshot 2023-07-20 132458](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/09052678-d061-4e92-bc61-3ae2bb5a3d51)
 
-![Screenshot 2023-07-04 114006](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/49c11071-13a1-49e9-a6ed-8bad82cc27f6)
 
-<h3>Pricing</h3>
+![Screenshot 2023-07-20 132656](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/6bb69fa8-85bc-4c4f-82db-158e1a1db4f0)
 
-![Screenshot 2023-07-04 114120](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/940d9c33-00ce-4a42-b953-914350a5f398)
 
-<h3>About Us</h3>
+![Screenshot 2023-07-20 132744](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/46dd80e8-b0fa-4e3e-8cc5-e046ae082944)
 
-![Screenshot 2023-07-04 114250](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/71ad48b6-f5a5-4465-a592-a3d775b31242)
 
-<h3>Classes Page</h3>
+![Screenshot 2023-07-20 132903](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/9c70fb21-374d-4140-9188-84a3293e3b85)
 
-![Screenshot 2023-07-04 114402](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/3db46f67-c48c-4257-93a9-6efd5fedfc4a)
+![Screenshot 2023-07-20 132957](https://github.com/ManishKuPatra254/Netflix-Clone/assets/112771729/4db11836-89c3-4c81-91c8-06b9a3f2aa17)
 
-<h3>Blogs Page</h3>
-
-![Screenshot 2023-07-04 114449](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/17c8955e-8d51-4466-bac2-2899472f2032)
-
-<h3>Join Us Page</h3>
-
-![Screenshot 2023-07-04 114536](https://github.com/ManishKuPatra254/Gym-Website/assets/112771729/a25a3148-7bec-4ccd-ba4e-b0ffd2520a28)
