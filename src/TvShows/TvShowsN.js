@@ -26,7 +26,6 @@ export function TvShows() {
     return (
         <Fragment>
             <MainHomeContents />
-
             <MainCardsTrend />
 
             <div className={styles.main_movie_contained}>

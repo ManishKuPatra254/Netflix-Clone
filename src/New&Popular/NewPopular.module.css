@@ -1,0 +1,46 @@
+.main_movie_contained {
+    width: 100%;
+    max-width: 92%;
+    margin: auto;
+    height: auto;
+    color: white;
+}
+
+.main_movie_contained h4 {
+    font-size: 30px;
+}
+
+.main_movie {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.main_movie::-webkit-scrollbar {
+    display: none;
+}
+
+.sub_movies_cards {
+    margin-right: 10px;
+}
+
+.movie_image_card {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .2s ease-in-out;
+}
+
+.movie_image_card:hover {
+    transition: .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+.movie_name {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+}

@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import style from './Navbar.module.css';
 import image1 from '../Image Section/netflix-logo-png-2562.png';
-// import LanguageIcon from '@mui/icons-material/Language';
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
 import { BsGlobe } from 'react-icons/bs';
