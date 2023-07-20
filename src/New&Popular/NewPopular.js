@@ -5,6 +5,7 @@ import { MainCardsTrend } from '../MainCardsTrend/MainCardsTrend';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import { Footer } from '../Footer/Footer';
 
 export function NewPopular() {
     const [newpopular, setNewPopular] = useState([]);
@@ -42,6 +43,7 @@ export function NewPopular() {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </Fragment>
     )
 }
